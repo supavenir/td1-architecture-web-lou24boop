@@ -1,1 +1,31 @@
-groscaca
+1- Méthodes GET et POST:
+Les requetes GET ont pour role uniquement la recuperation de données contrairement a la methode POST qui est plus utilise pour envoyer une entite vers la ressource indiquée.
+-par exemple la methode get va etre utilise par les clients tels que des navigateurs pour justment recupere des infos.
+-Par exemple la Methode POST va envoyer des données au serveur exemple soumettre un formulaire pour une entreprise POST envoie des données au serveur (ex : soumettre un formulaire).
+
+2- Critère GET POST
+Usage principal             Récupérer des données                                               Envoyer des données
+
+Visibilité des données    Les données sont visibles dans l’URL (ex: ?param=valeur)          Les données sont dans le corps de la requête (non visibles dans l’URL)
+
+Taille des données        Limitée (environ 2048 caractères selon navigateur)                  Pas de limite réelle (dépend du serveur)
+
+Sécurité                  Moins sécurisé,                                                     données exposées dans l’URL Plus sécurisé (mais toujours chiffrer avec HTTPS)
+
+Effet sur le serveur       Doit être sans effet (idempotent)                                   Peut modifier ou créer des ressources (non idempotent)
+
+Cachabilité              Peut être mis en cache                                             Généralement non caché
+
+Favori / Historique       Peut être mis en favori / historique                              Ne peut pas être mis en favori directement
+
+Utilisation dans            Par défaut pour formulaires de recherche                          Pour soumettre des données sensibles ou volumineuses
+les formulaires HTML
+
+3- le http est extensible du fait lorsqu'il est conçu pour pouvoir evoluer, être modifié ou bien enrichie sans casser ou perturber son fonctionnement
+existant.
+
+4- Le fait que http soit un protocole sans etat c est a dire qu il n enregistre aucune information sur les connexions précedentes or le développement d'applications Web doit souvent maintenir l'état.
+
+5- Une URL est composée de 5 parties:  ; le protocole, le sous-domaine, le nom de domaine principal, le domaine de deuxième niveau (SLD – Second-level Domain en anglais) et le répertoire.
+
+
